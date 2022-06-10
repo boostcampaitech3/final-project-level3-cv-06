@@ -7,7 +7,7 @@ from starlette.middleware.cors import CORSMiddleware
 from app.database.conn import db
 from app.common.config import conf
 from app.router import img, auth
-
+from app.common.const import BACKEND_PORT
 
 def create_app():
     c = conf()
@@ -35,7 +35,7 @@ app = create_app()
 
 
 if __name__ == '__main__':
-    uvicorn.run("main:app", host="0.0.0.0", reload=True, port=30004)
+    uvicorn.run("main:app", host="0.0.0.0", reload=True, port=BACKEND_PORT)
 
 # TODO: 유저의 이미지를 받아서 inference하는 함수 -> 디비에 예측 결과, bbox 정보 저장
 # TODO: 이전에 찍은 사진 이미지를 가져와서 시각화(비교)해주는 함수(이전, 현재) 날짜를 보내면 되나?
