@@ -1,0 +1,9 @@
+DB_URL = 'mysql+pymysql://root:as4862@localhost/artlab?charset=utf8mb4'
+IMAGE_BASE = '/opt/ml/input/fastapi_serving/app/user_images'
+MMCONFIG = '/opt/ml/input/mmdetection/__hyun_config'
+ALGORITHM = 'HS256'
+SECRET_KEY = 'abcd12#34z^xc^qwe'
+MODEL_CONF_DIR = '/opt/ml/input/fastapi_serving/app/models/tood_x101_cIoU_pafpn_ms_e35_cosined.py'
+MODEL_DIR = '/opt/ml/input/fastapi_serving/app/models/best_bbox_mAP_50_epoch_16.pth'
+BACKEND_URL = 'http://27.96.130.182:30004'
+BACKEND_PORT = 30004
