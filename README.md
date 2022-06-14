@@ -17,7 +17,7 @@
 - 다른 사람의 trouble patch를 Copy & Paste 하여 새로운 trouble 이미지를 만들었습니다.
     - flip, rotate, resize augmentation을 patch에 적용
     
-![image](src\copypaste.png)
+![image](src/copypaste.png)
 
 <br>
 
@@ -98,7 +98,7 @@
 - 좌측은 mmdetection으로, 우측은 SAHI를 적용하여 inference한 결과입니다.
 <br>
 
-![image](src\inference_img.png)
+![image](src/inference_img.png)
 
 
 ---
