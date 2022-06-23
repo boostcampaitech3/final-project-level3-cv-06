@@ -112,4 +112,4 @@
 
 ---
 ## 📺 Demo
-- 
+- [Demo 설명 readme](https://github.com/boostcampaitech3/final-project-level3-cv-06/blob/main/product_serving/readme.md)
