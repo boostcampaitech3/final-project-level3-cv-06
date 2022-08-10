@@ -100,8 +100,6 @@ class User(Base, BaseMixin):
     image = relationship("Image", back_populates="user")
 
 
-
-
 class Image(Base, BaseMixin):
     __tablename__ = 'image'
     
@@ -124,16 +122,3 @@ class Inference(Base, BaseMixin):
     
     image = relationship("Image", back_populates="inference")
 
-
-# class Tire(Base, BaseMixin):
-#     __tablename__ = 'Tire'
-    
-#     rim_inch = Column(Integer)
-#     structure = Column(String(length=5))
-#     aspect_ratio = Column(Integer)
-#     wheel_size = Column(Integer)
-#     user_id = Column(Integer, ForeignKey(User.id))
-#     position_id = Column(Integer, ForeignKey(Position.id))
-    
-#     position = relationship("Position", back_populates="tire")
-#     user = relationship("User", back_populates="tire")

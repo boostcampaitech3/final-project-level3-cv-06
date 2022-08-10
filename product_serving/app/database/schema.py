@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field
+from pydantic.networks import EmailStr
 from typing import List, Optional
 
 
@@ -15,4 +16,10 @@ class ImageLoad(BaseModel):
     image_name: str = None
 
 
+class UserJWT(BaseModel):
+    id: int
+    user_id: str = None
+    
+    class Config:
+        orm_mode = True
 

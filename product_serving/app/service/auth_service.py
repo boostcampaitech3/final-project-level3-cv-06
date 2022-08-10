@@ -1,5 +1,5 @@
+import re
 import bcrypt
-
 from app.utils.token import AuthHandler
 from app.database.models import User, Image
 from app.database.schema import UserRegister, Login
@@ -38,6 +38,19 @@ async def check_user_info(info: Login, session):
     if user and pw_check:
         token = authhandler.encode_token(user.id)
         return token
+    return False
+
+
+def check_pw_format(password):
+    if re.match('^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,20}$',password):
+        return True 
+    return False
+
+async def url_pattern_check(path, re_pattern):
+    result = re.match(re_pattern, path)
+    
+    if result:
+        return True
     return False
 
 def check_user_history(id: int):

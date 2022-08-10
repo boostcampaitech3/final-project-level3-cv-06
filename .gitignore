@@ -1,5 +1,6 @@
-app/common/const.py
+product_serving/app/common/const.py
 alembic.ini
+.env
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

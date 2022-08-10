@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "trouble"
+version = "0.1.0"
+description = ""
+authors = ["PeterLEEEEEE <dissgo12@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.79.0"
+uvicorn = "^0.18.2"
+SQLAlchemy = "^1.4.39"
+pydantic = {extras = ["email"], version = "^1.9.1"}
+PyMySQL = "^1.0.2"
+bcrypt = "^3.2.2"
+PyJWT = "^2.4.0"
+cryptography = "^37.0.4"
+python-decouple = "^3.6"
+pytz = "^2022.1"
+fastapi-mail = "^1.1.4"
+decouple = "^0.0.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
